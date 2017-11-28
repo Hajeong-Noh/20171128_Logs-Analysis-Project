@@ -1,4 +1,5 @@
-# Python version: 3.6.3
+#!/usr/bin/env python3
+
 import psycopg2
 
 
