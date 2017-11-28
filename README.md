@@ -34,7 +34,8 @@ create view authorview as
 
 ```sql
 create view PopularArticles as
-(select a.slug, a.title, count(*) as view from articles a, logview lv where a.slug = lv.slug group by a.slug, a.title order by view desc);
+(select a.slug, a.title, count(*) as view from articles a, logview lv
+where a.slug = lv.slug group by a.slug, a.title order by view desc);
 ```
 
 ```sql
